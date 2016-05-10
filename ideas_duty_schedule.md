@@ -1,12 +1,17 @@
 ## 值班安排
 ---
-* 在excel里生成数据： 
-  > {id, name, tel, duty_date}  
+> 2016-1-7 by quillerstone
+  > 主要功能描述：
 
-* 利用python将xlr导入sqlite;  
+  1. 利用python实现，包含xlrd、sqlite3、datetime、jinja2等库；
+  2. 存储值班人员信息，以月日历方式呈现；
+  3. 每天在日历日期上显示值班人员信息；
+  4. html页面采用bootstrap框架实现；
+---
 
-  > { 创建表：id int, name text, tel int, duty_date text}  
-  
+>在excel里生成数据： {id, name, tel, duty_date}  
+>利用python将xlr导入sqlite 
+>创建表：{id int, name text, tel int, duty_date text}  
 ### python知识点
 > * xlrd库知识点：  
     { xlrd.open_workbook, `打开excel表;`
@@ -37,9 +42,8 @@
      conn.close() 
     }
     参考：[sqlite3使用](http://www.tutorialspoint.com/sqlite/sqlite_python.htm)
-
 > * jinja2库知识点
     {
-    	
+    	参考：[jinja2教程](http://docs.jinkan.org/docs/jinja2/)
     }
-    参考：[jinja2教程](http://docs.jinkan.org/docs/jinja2/)
+    
